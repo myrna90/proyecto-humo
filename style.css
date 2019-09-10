@@ -7,6 +7,13 @@ body{
     font-family: 'Muli', sans-serif;
 }
 
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 /*estilos pagina principal*/
 .conteiner-menu{
     height: 80vh;
@@ -169,150 +176,33 @@ a{
     top: 4em;
 }
 
-.element-1:checked ~ .slider-container .slider-box {
-    margin-left: 0;
-}
-
-.element-2:checked ~ .slider-container .slider-box {
-    margin-left: -100%;
-}
-
-
-* {
-    box-sizing: border-box;
-}
-
-input[name="slider-select-element"] {
-    display: none;
-}
-
-#slider-arrows {
-    margin: -10% auto 0 auto;
-    width: 80%;
-}
-
-#slider-box {
-    
-    -moz-animation: autoSlider 15s infinite linear;
-    -o-animation: autoSlider 15s infinite linear;
-    -webkit-animation: autoSlider 15s infinite linear;
-    animation: autoSlider 15s infinite linear;
-
-    -webkit-transition: all 0.75s ease;
-    -moz-transition: all 0.75s ease;
-    -ms-transition: all 0.75s ease;
-    -o-transition: all 0.75s ease;
-    transition: all 0.75s ease;
-
-    height: 70%;
-    width: 100%;
-}
-
-#slider-container {
+.d-block{
     height: 80vh;
-    margin: 0 auto;
-    overflow: hidden;
-    text-align: left;
-    width: 80%;
 }
 
-.element-1,
-.element-2{
-    min-height: 30vh;
-    max-height: 80vh;
-    width: 100%;
-}
-
-.slider-element {
-    float: left;
-    width: 100%;
-    height: 100vh;
-}
-
-.div{
-    background: #000  ;
-    height: 50vh;
-    margin: 1.5em auto;
-    width: 100%;
-
-    -webkit-transition: all 0.75s ease;
-    -moz-transition: all 0.75s ease;
-    -ms-transition: all 0.75s ease;
-    -o-transition: all 0.75s ease;
-    transition: all 0.75s ease;
-}
-
-.firstAnimation {
-    -moz-animation: changeBackground 5s 1 linear;
-    -o-animation: changeBackground 5s 1 linear;
-    -webkit-animation: changeBackground 5s 1 linear;
-    animation: changeBackground 5s 1 linear;
-}
-
-
-.secondAnimation {
-    -moz-animation: changeBackgroundPlus 5s 1 linear;
-    -o-animation: changeBackgroundPlus 5s 1 linear;
-    -webkit-animation: changeBackgroundPlus 5s 1 linear;
-    animation: changeBackgroundPlus 5s 1 linear;
-}
-
-@-moz-keyframes autoSlider {
-    0% {
-        margin-left: 0;
+@media only screen and (max-width: 600px){
+    body{
+        background-color: none;
+        font-size: 1em;
+        height: 1500px;
     }
-
-    30% {
-        margin-left: 0;
+    .parrafo{
+        font-size: 2em;
+        margin-top: 3.5em;
     }
-
-    35% {
-        margin-left: -100%;
+    img{
+        margin-top: 1.5em;
+        height: 19em;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
-
-    65% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    95% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: 0;
-    }
-}
-
-@-webkit-keyframes autoSlider {
-    0% {
-        margin-left: 0;
-    }
-
-    30% {
-        margin-left: 0;
-    }
-
-    35% {
-        margin-left: -100%;
-    }
-
-    65% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    95% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: 0;
+    .conteiner{
+        font-size: 2em;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
