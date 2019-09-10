@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+body{
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    font-family: 'Muli', sans-serif;
+}
+
+/*estilos pagina principal*/
+.conteiner-menu{
+    height: 80vh;
+    width: 100%;
+
+}
+
+img{
+    width: 50%;
+    height: 30%;
+    float: left;
+}
+
+a{
+    color: white;
+}
+
+.border{
+    border: .4em solid #256d7b;
+}
+
+.menu{
+    width: 40%;
+    height: 100vh;
+    float: right;
+    text-align: center;
+    
+}
+
+.box{
+    width: 30%;
+    height: 50vh;
+    float: left;
+    text-align: center;
+    
+}
+
+.btn{
+    display: flex;
+    color: white;
+    margin: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box:hover{
+    background-color: #f00000;
+    opacity: .5;
+}
+
+.black{
+    background-color: black;
+}
+
+/*estilos vistas pantalla secundaria*/
+.conteiner-viwes{
+    width: 100%;
+    display: flex;
+}
+
+/*medida contenedores vistas*/
+.conteiner-section{
+    text-align: center;
+    height: 100vh;
+}
+
+/*estilos sección video*/
+.conteiner-video{
+    background-image: url("https://www.bestcoaching.com.mx/wp-content/uploads/2018/02/fondo-negro-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+/*estilos sección corazón*/
+.conteiner-heart{
+    background-image: url("https://st4.depositphotos.com/1581106/20874/v/600/depositphotos_208746144-stock-video-falling-snow-overlay-loop-black.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.img-corazon{
+    width: 40%;
+    height: 90vh;
+}
+
+@-webkit-keyframes movimiento-diagonal {
+    from {
+       left: 0%;
+    }
+    
+    to {
+       left: 30%;
+    }
+ }   
+.text{
+    width: 20%;
+    text-align: left;
+    float: left;
+    -webkit-animation-name: movimiento-diagonal;
+   -webkit-animation-duration: 3s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate;/*para que vuelva a su posicion inicial */
+   background-image: url("https://i.ytimg.com/vi/5r0ax1PHej8/hqdefault.jpg");
+   color: #fff;
+   position: relative;
+   padding: .2em;
+}
+
+.mensajes{
+    width: 70%;
+    height: 30vh;
+}
+
+/*estilos seción imagen*/
+.conteiner-face{
+    background-image: url("https://i.ytimg.com/vi/dcvoA51T8R0/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title-work{
+    font-size: 8rem;
+    color: #808B96;
+    text-align: left;
+}
+.img-cara{
+    width: 60%;
+    height: 50vh;
+}
+
+.text-work{
+    position: relative;
+    top: 7em;
+    width: 70%;
+    height: 40vh;
+}
+
+/**/
+.conteiner-img{
+    background-image: url("https://hips.hearstapps.com/es.h-cdn.co/quoes/images/ciencia/vete-a-trabajar-al-cafe-seras-mas-productivo-que-en-la-oficina/1301189-1-esl-ES/vete-a-trabajar-al-cafe-seras-mas-productivo-que-en-la-oficina.jpg?crop=1xw:0.7502930832356389xh;center,top&resize=480:*");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-img{
+    float: right;
+    position: relative;
+    top: 25em;
+    width: 40%;
+    height: 25vh;
+    font-size: 1em;
+    text-align: right;
+}
+
+/*estilos eción portafolio*/
+.text2{
+    width: 40%;
+    height: 20vh;
+    text-align: left;
+    float: left;
+    position: relative;
+    top: 4em;
+}
+
+.element-1:checked ~ .slider-container .slider-box {
+    margin-left: 0;
+}
+
+.element-2:checked ~ .slider-container .slider-box {
+    margin-left: -100%;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+input[name="slider-select-element"] {
+    display: none;
+}
+
+#slider-arrows {
+    margin: -10% auto 0 auto;
+    width: 80%;
+}
+
+#slider-box {
+    
+    -moz-animation: autoSlider 15s infinite linear;
+    -o-animation: autoSlider 15s infinite linear;
+    -webkit-animation: autoSlider 15s infinite linear;
+    animation: autoSlider 15s infinite linear;
+
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+
+    height: 70%;
+    width: 100%;
+}
+
+#slider-container {
+    height: 80vh;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+    width: 80%;
+}
+
+.element-1,
+.element-2{
+    min-height: 30vh;
+    max-height: 80vh;
+    width: 100%;
+}
+
+.slider-element {
+    float: left;
+    width: 100%;
+    height: 100vh;
+}
+
+.div{
+    background: #000  ;
+    height: 50vh;
+    margin: 1.5em auto;
+    width: 100%;
+
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
+
+.firstAnimation {
+    -moz-animation: changeBackground 5s 1 linear;
+    -o-animation: changeBackground 5s 1 linear;
+    -webkit-animation: changeBackground 5s 1 linear;
+    animation: changeBackground 5s 1 linear;
+}
+
+
+.secondAnimation {
+    -moz-animation: changeBackgroundPlus 5s 1 linear;
+    -o-animation: changeBackgroundPlus 5s 1 linear;
+    -webkit-animation: changeBackgroundPlus 5s 1 linear;
+    animation: changeBackgroundPlus 5s 1 linear;
+}
+
+@-moz-keyframes autoSlider {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes autoSlider {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
